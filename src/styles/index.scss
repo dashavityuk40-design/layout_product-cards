@@ -1,3 +1,11 @@
+@use 'variables' as *;
+@use 'stars';
+@use 'card';
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
 body {
   margin: 0;
 }
