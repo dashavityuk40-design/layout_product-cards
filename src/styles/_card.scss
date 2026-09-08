@@ -78,9 +78,14 @@
     line-height: 16px;
     text-decoration: none;
 
-    &:hover {
+        &:hover {
       background-color: #fff;
       color: $button-color;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
     }
   }
 }
