@@ -3,7 +3,7 @@
 .card {
   box-sizing: border-box;
   width: 200px;
-  padding: 24px 16px 16px;
+  padding: 32px 16px 16px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   font-family: Roboto, sans-serif;
@@ -13,13 +13,13 @@
     display: block;
     width: 160px;
     height: 134px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     object-fit: contain;
   }
 
   &__title {
     margin: 0 0 4px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 18px;
   }
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   &__reviews {
@@ -79,14 +79,22 @@
     line-height: 16px;
     text-decoration: none;
     cursor: pointer;
+    transition:
+      background-color 0.12s linear,
+      color 0.12s linear,
+      border-color 0.12s linear;
 
-        &:hover {
+    &:hover {
       background-color: #fff;
       color: $button-color;
+      border: 1px solid $button-color;
+      box-shadow: none;
+      outline: none;
     }
 
     &:focus,
     &:active {
+      box-shadow: none;
       outline: none;
     }
   }
